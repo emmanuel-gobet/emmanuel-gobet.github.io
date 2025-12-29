@@ -188,3 +188,20 @@ footer{padding:26px 0 40px; color:var(--muted); font-size:13px}
   width: auto;
   height: auto;
 }
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 90px 15px 1fr;
+  column-gap: 6px;
+  align-items: baseline;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li::before {
+  content: "•";
+  margin-right: 6px;
+}
